@@ -179,6 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  archerPrefab: {fileID: 129420, guid: 33813f041c76efe4797177c205386b02, type: 3}
+  isPlaceable: 0
 --- !u!65 &1461209800626495027
 BoxCollider:
   m_ObjectHideFlags: 0
