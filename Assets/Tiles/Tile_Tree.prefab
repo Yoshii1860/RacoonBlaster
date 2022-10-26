@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725993801702198860, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_Name
-      value: Tile_Tree 1
+      value: Tile_Tree
       objectReference: {fileID: 0}
     - target: {fileID: 2725993801702198899, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_RootOrder
@@ -214,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 6209158677635965905, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_text
       value: 0, 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}

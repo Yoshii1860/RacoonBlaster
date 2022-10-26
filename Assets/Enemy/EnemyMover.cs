@@ -8,7 +8,7 @@ public class EnemyMover : MonoBehaviour
     [SerializeField] [Range(0f, 5f)] float speed = 1f;
     void Start()
     {
-        transform.position = path[0].transform.position;
+        transform.Rotate(0,90,0);
         StartCoroutine(FollowPath()); 
     }
 
