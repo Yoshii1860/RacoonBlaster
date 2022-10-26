@@ -123,10 +123,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &475873372 stripped
+--- !u!114 &105503214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
-  m_PrefabInstance: {fileID: 1058640743}
+  m_PrefabInstance: {fileID: 684593629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &348144717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+  m_PrefabInstance: {fileID: 757657993}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &358255904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+  m_PrefabInstance: {fileID: 1761914018}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -456,10 +478,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
---- !u!114 &891185774 stripped
+--- !u!114 &935765284 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
-  m_PrefabInstance: {fileID: 1736517299}
+  m_PrefabInstance: {fileID: 1279418619}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -626,14 +648,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.48059064, y: -0, z: -0, w: 0.8769451}
+  m_LocalPosition: {x: 10, y: 30, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 57.448, y: 0, z: 0}
 --- !u!1001 &1047965193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -930,6 +952,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1431190810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+  m_PrefabInstance: {fileID: 1107302900}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1494096761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1169,6 +1202,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+--- !u!114 &1747873305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+  m_PrefabInstance: {fileID: 496696567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1761914018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1258,8 +1302,14 @@ MonoBehaviour:
   path:
   - {fileID: 1705646920}
   - {fileID: 1383663424}
-  - {fileID: 475873372}
-  - {fileID: 891185774}
+  - {fileID: 1431190810}
+  - {fileID: 105503214}
+  - {fileID: 358255904}
+  - {fileID: 348144717}
+  - {fileID: 935765284}
+  - {fileID: 1747873305}
+  - {fileID: 1705646920}
+  waitTime: 1
 --- !u!4 &1891249201
 Transform:
   m_ObjectHideFlags: 0
