@@ -93,7 +93,7 @@ MeshCollider:
   m_GameObject: {fileID: 3080246332417936113}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -189,6 +189,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1300354096267622769, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300354096267622769, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -200,9 +204,21 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: -0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1461209800626495027, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207567965978365757, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2725993801702198860, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_Name
       value: Tile_Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725993801702198860, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2725993801702198899, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_RootOrder
@@ -248,10 +264,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3253820928166837966, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6209158677635965905, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: m_text
       value: 0, 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
+      propertyPath: ic
+      value: 
+      objectReference: {fileID: 129420, guid: 33813f041c76efe4797177c205386b02, type: 3}
     - target: {fileID: 7717733183213442263, guid: 18cb76edf509ef64280c3ff6fdc99792, type: 3}
       propertyPath: newTile
       value: 
@@ -281,7 +305,7 @@ BoxCollider:
   m_GameObject: {fileID: 4864697465009344745}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.18, y: 3.96, z: 6.28}
   m_Center: {x: 0, y: 5.19, z: 0}
@@ -294,7 +318,7 @@ BoxCollider:
   m_GameObject: {fileID: 4864697465009344745}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 3, z: 1}
   m_Center: {x: 0, y: 1.6, z: 0}

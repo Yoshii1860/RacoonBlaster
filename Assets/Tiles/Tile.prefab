@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7112435139036583994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Road_1_line_5m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1023588623598998761}
   - component: {fileID: 7766643151871875247}
   - component: {fileID: 2207567965978365756}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Road_1_line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2725993801702198899}
   - component: {fileID: 7717733183213442263}
   - component: {fileID: 1461209800626495027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1305d9864aef8f40bd8df149f5beaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  archerPrefab: {fileID: 129420, guid: 33813f041c76efe4797177c205386b02, type: 3}
+  newTile: {fileID: 4228199863599379282, guid: 610aad49c1d7c6541845db3b18355126, type: 3}
+  cannonPrefab: {fileID: 129420, guid: 33813f041c76efe4797177c205386b02, type: 3}
   isPlaceable: 0
 --- !u!65 &1461209800626495027
 BoxCollider:
@@ -206,7 +207,7 @@ GameObject:
   - component: {fileID: 8654654041660832764}
   - component: {fileID: 6209158677635965905}
   - component: {fileID: 4668160098600038744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

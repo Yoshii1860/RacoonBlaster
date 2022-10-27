@@ -8,11 +8,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 958326681665194610, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
+      propertyPath: newTile
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 958326681665194610, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
       propertyPath: isPlaceable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3080246332417936113, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4603851588482357660, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4864697465009344726, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
@@ -62,6 +70,14 @@ PrefabInstance:
     - target: {fileID: 4864697465009344745, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
       propertyPath: m_Name
       value: Tile_NoTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925483586469536262, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6925483586469536262, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b516bc3031f73340bd2f224fdd0c070, type: 3}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     [SerializeField] GameObject newTile;
-    [SerializeField] GameObject archerPrefab;
+    [SerializeField] GameObject cannonPrefab;
     [SerializeField] bool isPlaceable;
 
     void OnMouseDown() 
@@ -13,7 +13,7 @@ public class Waypoint : MonoBehaviour
         if(isPlaceable)
         {
         Instantiate(newTile, transform.position, Quaternion.identity);
-        Instantiate(archerPrefab, transform.position, Quaternion.identity);
+        Instantiate(cannonPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
         }
     }
