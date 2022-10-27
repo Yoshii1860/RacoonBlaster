@@ -9,7 +9,25 @@ public class EnemyMover : MonoBehaviour
     void Start()
     {
         transform.Rotate(0,90,0);
+        FindPath();
+        ReturnToStart();
         StartCoroutine(FollowPath()); 
+    }
+
+    void FindPath()
+    {
+        path.Clear();
+
+        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("Path");
+        foreach(GameObject waypoint in waypoints)
+        {
+            path.Add(waypoint.GetComponent<Waypoint>());
+        }
+    }
+
+    void ReturnToStart()
+    {
+        transform.position = path[0].transform.position;
     }
 
     IEnumerator FollowPath()
@@ -32,5 +50,8 @@ public class EnemyMover : MonoBehaviour
                 }
             }
         }
+
+        Destroy(gameObject);
+
     }
 }
