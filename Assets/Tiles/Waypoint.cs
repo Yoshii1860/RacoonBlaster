@@ -13,12 +13,12 @@ public class Waypoint : MonoBehaviour
     {
         if(isPlaceable)
         {
-        bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
-        if (isPlaced)
-        {
-            Destroy(transform.GetChild(3).gameObject);
-        }
-        isPlaceable = !isPlaced;
+            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
+            if (isPlaced)
+            {
+                Destroy(transform.GetChild(3).gameObject);
+            }
+            isPlaceable = !isPlaced;
         }
     }
 }
