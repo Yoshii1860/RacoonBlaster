@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-[RequireComponent(typeof(Enemy))] 
 public class Bank : MonoBehaviour
 {
     [SerializeField] int startingBalance = 150;
@@ -29,11 +28,11 @@ public class Bank : MonoBehaviour
     public void Withdraw(int amount)
     {
         currentBalance -= Mathf.Abs(amount);
-
+        UpdateDisplay();
+        
         if(currentBalance <0)
         {
             ReloadScene();
-            UpdateDisplay();
         }
     }
 
