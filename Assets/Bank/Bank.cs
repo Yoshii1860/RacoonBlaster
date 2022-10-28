@@ -10,6 +10,12 @@ public class Bank : MonoBehaviour
     [SerializeField] int currentBalance;
     public int CurrentBalance { get { return currentBalance; } }
 
+    GameObject canvas;
+    GameObject loseText;
+    GameObject winText;
+
+    [SerializeField] [Range(0.1f, 10f)] float restartTimer = 3f;
+
     [SerializeField] TextMeshProUGUI displayBalance;
 
     void Awake() {
@@ -19,10 +25,30 @@ public class Bank : MonoBehaviour
         }
     }
 
+    void Start() 
+    {
+        canvas = GameObject.Find("Canvas");
+        loseText = canvas.transform.GetChild(1).gameObject;
+        winText = canvas.transform.GetChild(2).gameObject;
+    }
+
     public void Deposit(int amount)
     {
         currentBalance += Mathf.Abs(amount);
         UpdateDisplay();
+        if (currentBalance >500)
+        {
+            if(winText.activeSelf)
+            {
+                return;
+            }
+            else
+            {
+                winText.SetActive(true);
+            }
+
+            Invoke("ReloadScene", restartTimer);
+        }
     }
 
     public void Withdraw(int amount)
@@ -32,7 +58,16 @@ public class Bank : MonoBehaviour
         
         if(currentBalance <0)
         {
-            ReloadScene();
+            if(loseText.activeSelf)
+            {
+                return;
+            }
+            else
+            {
+                loseText.SetActive(true);
+            }
+
+            Invoke("ReloadScene", restartTimer);
         }
     }
 

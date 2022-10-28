@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4245662033670481047, guid: 8631b28f483cdb746aded0048aa77ad1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245662033670481047, guid: 8631b28f483cdb746aded0048aa77ad1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245662033670481047, guid: 8631b28f483cdb746aded0048aa77ad1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4245662033670481047, guid: 8631b28f483cdb746aded0048aa77ad1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
     - target: {fileID: 7992106480070661135, guid: 8631b28f483cdb746aded0048aa77ad1, type: 3}
       propertyPath: m_Name
       value: City_Tile_Curve_270
