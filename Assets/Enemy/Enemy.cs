@@ -5,7 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] int goldReward = 25;
-    [SerializeField] int goldPenalty = 25;
 
     Bank bank;
 
@@ -23,6 +22,7 @@ public class Enemy : MonoBehaviour
     public void StealGold()
     {
         if(bank == null) { return; }
-        bank.Withdraw(goldPenalty);
+        bank.classTorE = false;
+        bank.Withdraw(bank.goldPenalty);
     }
 }
