@@ -17,7 +17,7 @@ public class ObjectPool : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        StartCoroutine(DepositText());
     }
     
     void PopulatePool()
@@ -42,7 +42,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnEnemy()
+    IEnumerator DepositText()
     {
         while(true)
         {
