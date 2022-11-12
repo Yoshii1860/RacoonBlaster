@@ -39,7 +39,6 @@ public class Tile : MonoBehaviour
             bool isSuccessful = towerPrefab.CreateTower(towerPrefab, transform.position);
             if (isSuccessful)
             {
-                Destroy(transform.GetChild(3).gameObject);
                 gridManager.BlockNode(coordinates);
                 pathfinder.NotifyReceivers();
             }
