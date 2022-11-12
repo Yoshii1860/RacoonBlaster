@@ -5,10 +5,9 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     [SerializeField] Tower towerPrefab;
-
     [SerializeField] bool isPlaceable;
     public bool IsPlaceable { get { return isPlaceable; } }
-
+    
     GridManager gridManager;
     Pathfinder pathfinder;
     Vector2Int coordinates = new Vector2Int();
@@ -32,6 +31,11 @@ public class Tile : MonoBehaviour
         }
     }
 
+    void DeactivateRedTile()
+    {
+        transform.Find("Overlayer").gameObject.SetActive(false);
+    }
+
     void OnMouseDown() 
     {
         if(gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates) && isPlaceable)
@@ -41,6 +45,19 @@ public class Tile : MonoBehaviour
             {
                 gridManager.BlockNode(coordinates);
                 pathfinder.NotifyReceivers();
+            }
+        }
+        else
+        {
+            GameObject overlayer = transform.Find("Overlayer").gameObject;
+            if(overlayer.activeSelf)
+            {
+                return;
+            }
+            else
+            {
+                overlayer.SetActive(true);
+                Invoke("DeactivateRedTile", 0.5f);
             }
         }
     }
